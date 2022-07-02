@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0%;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*---------------------------*/
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    
+}
+.botones{
+    width: 50%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 10px 30px;
+    height: 30px;
+
+    color: rgba(118, 117, 117, 0.802);
+    border-radius: 50px;
+    border-color:rgba(118, 117, 117, 0.802); ;
+}
+/*---------------------------*/
+#no{
+    position: relative;
+}
+/*---------------------------*/
+.mensaje {
+    z-index: -1;
+    position: absolute;
+    visibility: hidden;
+}
+p{
+    padding: 50px 100px;
+}
