@@ -38,7 +38,9 @@ yes_button.addEventListener('click',function(e){
     mensajePositivo.style.backgroundColor = 'white';
 });
 
-close_button.addEventListener('click',function(e){
+   close_button.forEach(element => {
+
+       element.addEventListener('click',function(e){
     e.preventDefault();
     console.log('funcionooo')
     mensajePositivo.style.visibility= 'hidden';
@@ -47,4 +49,8 @@ close_button.addEventListener('click',function(e){
     document.body.style.backgroundColor = 'white';
 
 });
+    
+   });
+
+
 
