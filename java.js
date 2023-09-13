@@ -20,7 +20,14 @@ let cambiarLugar = function(){
 };
 
 // no_button.addEventListener('mouseover',cambiarLugar);
-
+no_button.addEventListener('click',function(e){
+    e.preventDefault();
+    console.log('funcionooo')
+    mensajeNegativo.style.visibility= 'visible';
+    contenedor.style.visibility='hidden';
+    document.body.style.backgroundColor = 'red';
+    mensaje.style.backgroundColor = 'white';
+});
 yes_button.addEventListener('click',function(e){
     e.preventDefault();
     console.log('funcionooo')
