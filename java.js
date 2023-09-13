@@ -1,5 +1,6 @@
 const no_button=document.getElementById('no');
 const yes_button = document.getElementById('yes');
+const close_button = document.querySelectorAll('.close');
 const contenedor = document.getElementById('contenedor');
 const mensajePositivo = document.getElementById('mensaje-positivo');
 const mensajeNegativo = document.getElementById('mensaje-negativo');
@@ -26,7 +27,7 @@ no_button.addEventListener('click',function(e){
     mensajeNegativo.style.visibility= 'visible';
     contenedor.style.visibility='hidden';
     document.body.style.backgroundColor = 'red';
-    mensaje.style.backgroundColor = 'white';
+    mensajeNegativo.style.backgroundColor = 'white';
 });
 yes_button.addEventListener('click',function(e){
     e.preventDefault();
@@ -34,6 +35,16 @@ yes_button.addEventListener('click',function(e){
     mensajePositivo.style.visibility= 'visible';
     contenedor.style.visibility='hidden';
     document.body.style.backgroundColor = 'red';
-    mensaje.style.backgroundColor = 'white';
+    mensajePositivo.style.backgroundColor = 'white';
+});
+
+close_button.addEventListener('click',function(e){
+    e.preventDefault();
+    console.log('funcionooo')
+    mensajePositivo.style.visibility= 'hidden';
+    mensajeNegativo.style.visibility= 'hidden';
+    contenedor.style.visibility='visible';
+    document.body.style.backgroundColor = 'white';
+
 });
 
