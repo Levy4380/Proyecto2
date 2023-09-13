@@ -1,8 +1,8 @@
 const no_button=document.getElementById('no');
 const yes_button = document.getElementById('yes');
 const contenedor = document.getElementById('contenedor');
-const mensajePositivo = document.getElementById('mensaje');
-const mensajeNegativo = document.getElementById('mensaje');
+const mensajePositivo = document.getElementById('mensaje-positivo');
+const mensajeNegativo = document.getElementById('mensaje-negativo');
 
 let cambiarLugar = function(){
     randomNumber = function(max){
@@ -24,7 +24,7 @@ let cambiarLugar = function(){
 yes_button.addEventListener('click',function(e){
     e.preventDefault();
     console.log('funcionooo')
-    mensaje.style.visibility= 'visible';
+    mensajePositivo.style.visibility= 'visible';
     contenedor.style.visibility='hidden';
     document.body.style.backgroundColor = 'red';
     mensaje.style.backgroundColor = 'white';
