@@ -1,7 +1,8 @@
 const no_button=document.getElementById('no');
 const yes_button = document.getElementById('yes');
 const contenedor = document.getElementById('contenedor');
-const mensaje = document.getElementById('mensaje');
+const mensajePositivo = document.getElementById('mensaje');
+const mensajeNegativo = document.getElementById('mensaje');
 
 let cambiarLugar = function(){
     randomNumber = function(max){
@@ -18,7 +19,8 @@ let cambiarLugar = function(){
     no_button.style.position = 'absolute';
 };
 
-no_button.addEventListener('mouseover',cambiarLugar);
+// no_button.addEventListener('mouseover',cambiarLugar);
+
 yes_button.addEventListener('click',function(e){
     e.preventDefault();
     console.log('funcionooo')
