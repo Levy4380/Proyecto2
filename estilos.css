@@ -43,7 +43,7 @@ button{
 }
 /*---------------------------*/
 .mensaje {
-    z-index: 0;
+    z-index: -1;
     position: absolute;
     visibility: hidden;
 }
