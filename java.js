@@ -22,8 +22,9 @@ no_button.addEventListener('mouseover',cambiarLugar);
 yes_button.addEventListener('click',function(e){
     e.preventDefault();
     console.log('funcionooo')
-    mensaje.style.visibility= 'visible';
-    contenedor.style.visibility='hidden';
+    mensaje?.style.visibility= 'visible';
+    contenedor?.style.visibility='hidden';
     document.body.style.backgroundColor = 'red';
-    mensaje.style.backgroundColor = 'white';
+    mensaje?.style.backgroundColor = 'white';
 });
+
